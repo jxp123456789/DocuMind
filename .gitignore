@@ -1,0 +1,26 @@
+# Environment
+.env
+.env.local
+
+# Data
+data/documents/
+data/vector_db/
+
+# Cache
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
