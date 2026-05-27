@@ -222,16 +222,6 @@ workflow = RAGWorkflow(
 )
 ```
 
-## 面试话术参考
-
-> **项目介绍**：
-> "我设计了一个基于多 Agent 协作的智能文档问答系统 DocuMind。系统采用编排式架构，由 RAGWorkflow 调度器协调三个专职 Agent：ParserAgent 负责多格式文档解析和智能分块，IndexerAgent 使用本地 BGE 模型生成 Embedding 并构建 Chroma 向量索引，QAAgent 基于检索结果调用 LLM 生成回答并支持溯源引用。"
->
-> **技术亮点**：
-> - 采用 RAG 架构，本地 Embedding + 云端 LLM 混合部署，兼顾成本与效果
-> - 多级分块策略（段落 → 句子 → 重叠），保持语义完整性
-> - 全链路溯源机制，回答可定位到原文页码
-> - MD5 去重 + 增量索引，支持文档动态管理
 
 ## License
 
